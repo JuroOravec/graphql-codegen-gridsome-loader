@@ -1,5 +1,7 @@
 # GraphQL Codegen Gridsome Loader
 
+(NPM)[https://www.npmjs.com/package/graphql-codegen-gridsome-loader]
+
 Custom loader for `.vue` files with Gridsome custom blocks (`<static-query>`, `<page-query>`).
 
 Works with glob patterns.
