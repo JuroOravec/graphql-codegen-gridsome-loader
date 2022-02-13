@@ -53,7 +53,7 @@ const acceptedCustomBlockTypes = ['page-query', 'static-query'];
  */
 const gridsomeQueryDocumentLoader = (vueFilepathOrGlob) => {
   try {
-    const files = glob.sync(docString) ?? [];
+    const files = glob.sync(vueFilepathOrGlob) ?? [];
 
     console.warn({ files });
 
