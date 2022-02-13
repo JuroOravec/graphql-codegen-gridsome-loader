@@ -55,8 +55,6 @@ const gridsomeQueryDocumentLoader = (vueFilepathOrGlob) => {
   try {
     const files = glob.sync(vueFilepathOrGlob) ?? [];
 
-    console.warn({ files });
-
     const mergedFilesContents = files.map((filePath) => {
       const fileContent = readFileSync(filePath, 'utf-8');
       const sfc = parseComponent(fileContent);
