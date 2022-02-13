@@ -1,0 +1,37 @@
+<template>
+  <v-app class="Bar">
+    <router-view />
+  </v-app>
+</template>
+
+<static-query>
+query barMetadata {
+  metadata {
+    siteUrl
+  }
+}
+</static-query>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api';
+import { VApp } from 'vuetify/lib';
+
+// This component overrides the default App.vue defined by gridsome
+// See https://gridsome.org/docs/overriding-app/
+const Bar = defineComponent({
+  name: 'Bar',
+  components: {
+    VApp,
+  },
+});
+
+export default Bar;
+</script>
+
+<style lang="scss">
+:root {
+  // See https://stackoverflow.com/questions/46522331/scroll-bar-in-the-main-section-of-a-v-app
+  overflow-y: auto !important;
+}
+
+</style>

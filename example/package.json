@@ -1,0 +1,16 @@
+{
+  "name": "graphql-code-generator-gridsome-loader",
+  "private": false,
+  "main": "gridsomeQueryDocumentLoader.js",
+  "scripts": {
+    "gql:gen": "graphql-codegen --config codegen.yml"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.5.0",
+    "@graphql-codegen/typescript": "^2.4.3",
+    "@graphql-codegen/typescript-operations": "^2.2.4"
+  },
+  "dependencies": {
+    "glob": "^7.2.0"
+  }
+}
