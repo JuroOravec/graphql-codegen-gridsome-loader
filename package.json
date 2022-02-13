@@ -3,6 +3,7 @@
   "description": "Custom loader for `.vue` files with Gridsome custom blocks (`<static-query>`, `<page-query>`)",
   "private": false,
   "main": "gridsomeQueryDocumentLoader.js",
+  "version": "1.0.0",
   "devDependencies": {
     "@graphql-codegen/cli": "^2.5.0",
     "@graphql-codegen/typescript": "^2.4.3",
